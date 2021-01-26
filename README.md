@@ -16,4 +16,4 @@ Architecture patterns: MVC, DAO
 Server components:
 ![Server](diagrams/servercomponents.png)
 Client components:
-![Client](diagrams/clientcomponents.png)
+![Client](diagrams/clientcomponets.png)
