@@ -10,7 +10,7 @@ Database: MySQL
 Architecture patterns: MVC, DAO
 <!--comment-->
 ## Description
-![The functionality of the application is presented in the use-case diagram:](diagrams/UseCase.vpd.jpg)
+![The functionality of the application is presented in the use-case diagram:](diagrams/usecase.png)
 
 ## Architecture
 Server components:
