@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="view.ForAdmin">
+  <grid id="cbd77" binding="contentPane" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="10" left="10" bottom="10" right="10"/>
+    <constraints>
+      <xy x="48" y="54" width="623" height="421"/>
+    </constraints>
+    <properties>
+      <background color="-220399"/>
+      <preferredSize width="800" height="400"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="e3588" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="2" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="700" height="400"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-220399"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <tabbedpane id="4692f" binding="tabbedPane1" default-binding="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="200" height="200"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font name="Yu Gothic UI Semibold" size="14" style="0"/>
+              <opaque value="false"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="af4ee" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="10" left="10" bottom="10" right="10"/>
+                <constraints>
+                  <tabbedpane title="Управление пользователями"/>
+                </constraints>
+                <properties>
+                  <opaque value="false"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <scrollpane id="8ec56">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Yu Gothic UI Semibold" size="14" style="0"/>
+                      <opaque value="true"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="37d8b" class="javax.swing.JTable" binding="table1" default-binding="true">
+                        <constraints/>
+                        <properties>
+                          <font name="Yu Gothic UI Semibold" size="14" style="0"/>
+                          <preferredScrollableViewportSize width="-1" height="-1"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </scrollpane>
+                  <tabbedpane id="11863" binding="tabbedPane2" default-binding="true">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="2" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="-1" height="100"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font name="Yu Gothic UI Semibold" size="14" style="0"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <grid id="17458" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <tabbedpane title="Фильтрация"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="a2058" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="0" row-span="3" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <font name="Yu Gothic UI Semibold" size="14" style="0"/>
+                              <text value="Выберите роль"/>
+                            </properties>
+                          </component>
+                          <component id="3bd4c" class="javax.swing.JComboBox" binding="filterRole_cb">
+                            <constraints>
+                              <grid row="0" column="2" row-span="3" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties/>
+                          </component>
+                        </children>
+                      </grid>
+                      <grid id="c6063" layout-manager="GridLayoutManager" row-count="7" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <tabbedpane title="Поиск"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="d696f" class="javax.swing.JTextField" binding="searchUser_tf">
+                            <constraints>
+                              <grid row="0" column="1" row-span="4" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="40776" class="javax.swing.JButton" binding="searchUserButton">
+                            <constraints>
+                              <grid row="5" column="1" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <font name="Yu Gothic UI Semibold" size="14" style="1"/>
+                              <text value="Поиск"/>
+                            </properties>
+                          </component>
+                          <component id="8f115" class="javax.swing.JButton" binding="cancelSeachUserButton">
+                            <constraints>
+                              <grid row="5" column="2" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <font name="Yu Gothic UI Semibold" size="14" style="1"/>
+                              <text value="Сбросить"/>
+                            </properties>
+                          </component>
+                          <component id="fe544" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="0" row-span="4" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <font name="Yu Gothic UI Semibold" size="14" style="0"/>
+                              <text value="Введите фамилию"/>
+                            </properties>
+                          </component>
+                          <component id="e28f0" class="javax.swing.JLabel" binding="searchUser_lb">
+                            <constraints>
+                              <grid row="4" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value=""/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                    </children>
+                  </tabbedpane>
+                  <grid id="2b53c" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="2" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="-1" height="80"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <opaque value="false"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="8b136" class="javax.swing.JButton" binding="delButton">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <background color="-1"/>
+                          <font name="Yu Gothic UI Semibold" size="14" style="0"/>
+                          <text value="Удалить"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+              <grid id="a437f" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="10" left="10" bottom="10" right="10"/>
+                <constraints>
+                  <tabbedpane title="Просмотр компаниий"/>
+                </constraints>
+                <properties>
+                  <opaque value="false"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <scrollpane id="8d7d7">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Yu Gothic UI Semibold" size="14" style="0"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="9b532" class="javax.swing.JTable" binding="tableCompany">
+                        <constraints/>
+                        <properties>
+                          <font name="Yu Gothic UI Semibold" size="14" style="0"/>
+                          <preferredScrollableViewportSize width="-1" height="-1"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </scrollpane>
+                  <tabbedpane id="a4783" binding="tabbedPane3" default-binding="true">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="2" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="-1" height="100"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font name="Yu Gothic UI Semibold" size="14" style="0"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <grid id="d2f3c" layout-manager="GridLayoutManager" row-count="2" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <tabbedpane title="Фильтрация"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="9e6a6" class="javax.swing.JComboBox" binding="filterCountry_cb">
+                            <constraints>
+                              <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="d3a7e" class="javax.swing.JComboBox" binding="filterIndustry_cb">
+                            <constraints>
+                              <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="9e059" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <font name="Yu Gothic UI Semibold" size="14" style="0"/>
+                              <text value="Выберите страну"/>
+                            </properties>
+                          </component>
+                          <component id="dfb16" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <font name="Yu Gothic UI Semibold" size="14" style="0"/>
+                              <text value="Выберите отрасль"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <grid id="10102" layout-manager="GridLayoutManager" row-count="7" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <tabbedpane title="Поиск"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="c3d4c" class="javax.swing.JButton" binding="searchCompanyButton">
+                            <constraints>
+                              <grid row="5" column="1" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <font name="Yu Gothic UI Semibold" size="14" style="1"/>
+                              <text value="Поиск"/>
+                            </properties>
+                          </component>
+                          <component id="31e4b" class="javax.swing.JButton" binding="cancelSearchCompanyButton">
+                            <constraints>
+                              <grid row="5" column="2" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <font name="Yu Gothic UI Semibold" size="14" style="1"/>
+                              <text value="Сбросить"/>
+                            </properties>
+                          </component>
+                          <component id="337c1" class="javax.swing.JLabel" binding="searchCompany_lb">
+                            <constraints>
+                              <grid row="4" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <font name="Consolas" size="12" style="2"/>
+                              <foreground color="-65535"/>
+                              <text value=""/>
+                            </properties>
+                          </component>
+                          <component id="1a449" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="0" row-span="4" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <font name="Yu Gothic UI Semibold" size="14" style="0"/>
+                              <text value="Введите название"/>
+                            </properties>
+                          </component>
+                          <component id="37476" class="javax.swing.JTextField" binding="searchCompany_tf">
+                            <constraints>
+                              <grid row="0" column="1" row-span="4" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                        </children>
+                      </grid>
+                    </children>
+                  </tabbedpane>
+                  <grid id="3966a" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <opaque value="false"/>
+                    </properties>
+                    <border type="none"/>
+                    <children/>
+                  </grid>
+                </children>
+              </grid>
+            </children>
+          </tabbedpane>
+        </children>
+      </grid>
+      <component id="94dee" class="javax.swing.JButton" binding="buttonExit">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-1"/>
+          <enabled value="true"/>
+          <font name="Yu Gothic UI Semibold" size="14" style="1"/>
+          <text value="Выйти из аккаунта"/>
+        </properties>
+      </component>
+      <hspacer id="931d2">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+    </children>
+  </grid>
+  <buttonGroups>
+    <group name="SortUser">
+      <member id="254f5"/>
+      <member id="7eeda"/>
+    </group>
+    <group name="SortCompany">
+      <member id="17e0a"/>
+      <member id="2efa3"/>
+    </group>
+  </buttonGroups>
+</form>
