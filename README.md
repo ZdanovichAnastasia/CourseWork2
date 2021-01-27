@@ -1,5 +1,5 @@
-# Course project for valuation of the company cost by the method of analogous companies
-A user can register, enter the necessary data and get an estimate of the value of his company.
+# Course project on cost analysis using the Pre ABC-Costing method
+A user can register, enter the necessary data and get a cost analysis of their company.
 ## Technologies
 UI: Swing, AWT
 <!--comment-->
